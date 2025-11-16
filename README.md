@@ -35,3 +35,35 @@ Incluye dos servicios principales:
 Para ejecutar todo:
 
 docker compose up --build
+
+---
+
+## ✔️ c) Servicio del servidor de aplicación (Flask)
+
+La app está construida con:
+
+- **Python 3.10**
+- **Flask**
+- Conexión a MySQL mediante `mysql-connector-python`
+
+El Dockerfile:
+- Instala dependencias
+- Copia el código
+- Ejecuta la aplicación en el puerto 5000
+
+---
+
+## ✔️ d) Servicio de base de datos MySQL
+
+El contenedor MySQL configura:
+
+- Usuario root con contraseña personalizada  
+- Base de datos inicial `testdb`  
+- Persistencia con volumen Docker  
+- Puerto expuesto 3306  
+
+---
+
+## 🔗 Repositorio del proyecto
+
+https://github.com/Diana-hub23/practica7-docker_webapp
